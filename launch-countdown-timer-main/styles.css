@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+:root {
+    /* Primary Colors */
+    --grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+    
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --dark-desaturated-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+    /* Font */
+    --fs: 14px;
+}
+*, *>* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+.stars {
+    position: absolute;
+}
+.hills {
+    position: absolute;
+    bottom: 0;
+}
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Red Hat Text", sans-serif;
+    background-color: var(--very-dark-blue);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container h1 {
+    color: var(--white);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: -120px auto 50px;
+}
+.countdown {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.countdown div {
+    margin: 10px;
+}
+.countdown p {
+    width: 100px;
+    padding: 15px 0;
+    color: var(--soft-red);
+    font-size: 46px;
+    font-weight: bold;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 5px;
+}
+.countdown h3 {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.socials {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.socials ul {
+    display: flex;
+}
+.socials ul li {
+    margin: 0 20px;
+}
+@media (min-width:500px) {
+    .container {
+        max-width: auto;
+    }
+}
+@media (min-width: 1440px) {
+    .stars img,
+    .hills img {
+        width: 1600px;
+    }
+}
+@media (min-width: 1600px) {
+    .stars img,
+    .hills img {
+        width: 1920px;
+    }
+}
